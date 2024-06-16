@@ -22,7 +22,7 @@
     "description": "Tells the user it cannot report a whitelisted domain."
   },
   "reportConfirm": {
-    "message": "¿Desearía reportar un aviso de cookies en $HOSTNAME$?",
+    "message": "¿Desea reportar un aviso de cookies en $HOSTNAME$?",
     "description": "Ask for confirmation before reporting a website. Don't use quotes here.",
     "placeholders": {
       "hostname": {
@@ -72,7 +72,7 @@
     "description": "Options text for whitelist box."
   },
   "optionStatusIndicators": {
-    "message": "indicadores de estado",
+    "message": "Indicadores de estado",
     "description": "Option text for enabling the status indicator"
   },
   "optionsButton": {
@@ -122,5 +122,25 @@
   "menuLoadingText": {
     "message": "Cargando...",
     "description": "Loading messsage"
+  },
+  "generalIssueOption": {
+    "message": "Problema General (Requiere notas)",
+    "description": "The option text for a general issue"
+  },
+  "scrollbarIssueOption": {
+    "message": "Relacionado con la barra de desplazamiento",
+    "description": "The option text for a scrollbar issue"
+  },
+  "modalIssueOption": {
+    "message": "Relacionado con el modal",
+    "description": "The option text for a modal issue"
+  },
+  "scrollbarIssueDescription": {
+    "message": "Seleccione esta opción para indicar un problema en esta página relacionado con el desplazamiento, como 'El sitio no muestra una barra de desplazamiento'.",
+    "description": "Explanation of what a scrollbar issue is"
+  },
+  "modalIssueDescription": {
+    "message": "Seleccione esta opción para indicar un problema en esta página relacionado con un modal, como 'hay un cuadro emergente que bloquea la interacción'.",
+    "description": "Explanation of what a modal issue is"
   }
 }

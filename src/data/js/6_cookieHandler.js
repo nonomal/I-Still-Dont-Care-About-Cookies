@@ -341,10 +341,6 @@ function getE(hostname) {
       return ["fvw_privacy=enabled"];
     case "kinoheld.de":
       return ["KHCONSENT=accept"];
-    case "calm.com":
-      return ["has-agreed-to-cookies=true"];
-    case "resursbank.se":
-      return ["cookie_consent=necessary%3A1%2Cstatistics%3A0%2Cmarketing%3A0"];
     case "airmates.eu":
       return ["privacy-dialog-shown=true"];
     case "mentimeter.com":
@@ -715,6 +711,10 @@ function getE(hostname) {
       ];
     case "temu.com":
       return ["privacy_setting=100"];
+    case "webstore.zvw.de":
+      return ["trackingAccepted=false"];
+    case "mysanantonio.com":
+      return ['_consent_cookie={"services":[]}'];
   }
 
   const parts = hostname.split(".");

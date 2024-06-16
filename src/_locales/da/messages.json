@@ -122,5 +122,25 @@
   "menuLoadingText": {
     "message": "Indlæser...",
     "description": "Loading messsage"
+  },
+  "generalIssueOption": {
+    "message": "Generelt problem (kræver noter)",
+    "description": "The option text for a general issue"
+  },
+  "scrollbarIssueOption": {
+    "message": "Scrollbar relateret",
+    "description": "The option text for a scrollbar issue"
+  },
+  "modalIssueOption": {
+    "message": "Modal relateret",
+    "description": "The option text for a modal issue"
+  },
+  "scrollbarIssueDescription": {
+    "message": "Vælg denne indstilling for at angive et problem på denne side relateret til rulning - som f. eks. 'webstedet viser ikke en rullebjælke'.",
+    "description": "Explanation of what a scrollbar issue is"
+  },
+  "modalIssueDescription": {
+    "message": "Vælg denne indstilling for at tilkendegive et problem på denne side relateret til en modal - som f. eks. 'Der er en pop op-boks blokering hændelse'.",
+    "description": "Explanation of what a modal issue is"
   }
 }

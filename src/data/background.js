@@ -353,7 +353,7 @@ if (!isManifestV3) {
 }
 // Reporting
 
-function reportWebsite(info, tab, anon, notes, callback) {
+function reportWebsite(info, tab, anon, issueType, notes, callback) {
   if (tab.url.indexOf("http") != 0 || !tabList[tab.id]) {
     return;
   }
@@ -387,9 +387,12 @@ function reportWebsite(info, tab, anon, notes, callback) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
+        issueType,
         notes,
         url: tab.url,
         browser: getBrowserAndVersion(),
+        language:
+          navigator.language || Intl.DateTimeFormat().resolvedOptions().locale,
         extensionVersion: chrome.runtime.getManifest().version,
       }),
     })
@@ -574,6 +577,7 @@ chrome.runtime.onMessage.addListener((request, info, sendResponse) => {
             info,
             tabList[request.tabId],
             request.anon,
+            request.issueType,
             request.notes,
             sendResponse
           );
